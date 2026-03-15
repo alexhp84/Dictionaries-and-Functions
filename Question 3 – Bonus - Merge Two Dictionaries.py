@@ -8,7 +8,7 @@ def two_dictionaries():
     """
     dict1 = {
         "name": "Dan",
-        "city": "Tel Av iv",
+        "city": "Tel Aviv",
         "job": "Dev"
     }
 
