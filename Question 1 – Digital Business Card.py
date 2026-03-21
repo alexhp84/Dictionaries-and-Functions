@@ -23,6 +23,7 @@ def create_business_card():
         else:
             break
     business_card["Job Title"] = input(str("Please enter your job title: ")).title()
+    print(business_card)
     print('---Business Card---')
     for key, value in business_card.items():
         print(f"{key}: {value}")
