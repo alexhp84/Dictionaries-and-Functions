@@ -1,3 +1,14 @@
+dict1 = {
+    "name": "Dan",
+    "city": "Tel Aviv",
+    "job": "Dev"
+}
+
+dict2 = {
+    "name": "Daniel",
+    "city": "TA",
+    "country": "Israel"
+}
 def two_dictionaries():
     """
     It creates a merged dictionary by doing the following:
@@ -6,23 +17,15 @@ def two_dictionaries():
     If it only exists in one dictionary it takes that
     :return:
     """
-    dict1 = {
-        "name": "Dan",
-        "city": "Tel Aviv",
-        "job": "Dev"
-    }
 
-    dict2 = {
-        "name": "Daniel",
-        "city": "TA",
-        "country": "Israel"
-    }
     merged = {}
 
     for key in dict1:
         if key in dict2:
             if len(dict1[key]) >= len(dict2[key]):
                 merged[key] = dict1[key]
+            else:
+                merged[key] = dict2[key]
         else:
             merged[key] = dict1[key]
 
